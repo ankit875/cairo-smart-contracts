@@ -1,0 +1,29 @@
+[package]
+name = "contracts"
+version = "0.1.0"
+authors = ["Ankit Agrawal <ankitagrawal620@gmail.com>"]
+description = "Collection of commonly used starknet smart contracts"
+license = "MIT"
+cairo = "2.6.3"
+edition = "2023_11"
+
+
+# See more keys and their definitions at https://docs.swmansion.com/scarb/docs/reference/manifest.html
+
+[dependencies]
+starknet = "2.6.3"
+openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v0.11.0" }
+snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry", tag = "v0.24.0" }
+
+[dev-dependencies]
+
+# comment following line if executing non-starknet cairo programs
+[[target.starknet-contract]]
+sierra = true
+casm = true
+
+[scripts]
+test = "snforge test"
+
+[tool.snforge]
+exit_first = true

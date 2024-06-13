@@ -1,0 +1,5 @@
+
+[sncast.ank_21_sn_p1]
+account = "ank_21_sn_v1"
+accounts-file = "/Users/ankit.agrawal/.starknet_accounts/starknet_open_zeppelin_accounts.json"
+url = "https://starknet-sepolia.public.blastapi.io"

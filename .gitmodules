@@ -1,0 +1,4 @@
+[submodule "contracts"]
+	path = contracts
+	url = <repository-url>
+  branch = main  # Ensure this branch exists
