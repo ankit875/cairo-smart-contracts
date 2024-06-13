@@ -1,4 +1,0 @@
-[submodule "contracts"]
-	path = contracts
-	url = git@github.com:ankit875/cairo-smart-contracts.git
-  branch = main  # Ensure this branch exists
