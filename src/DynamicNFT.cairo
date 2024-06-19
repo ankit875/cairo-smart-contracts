@@ -63,7 +63,7 @@ mod DynamicNFT {
         ref self: ContractState, owner: ContractAddress, claim_limit_per_addrees: u8) {
         let name = "DynamicNFT";
         let symbol = "DNFT";
-        let base_uri = "https://create-starknet-app.xyz/api?id=";
+        let base_uri = "https://mint-my-moments.vercel.app/api?id=";
         let token_id = 1;
 
         self.erc721.initializer(name, symbol, base_uri);
